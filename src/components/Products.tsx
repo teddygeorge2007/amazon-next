@@ -129,7 +129,7 @@ import { HiShoppingCart } from "react-icons/hi";
 import { FaHeart } from "react-icons/fa";
 import FormattedPrice from "./FormattedPrice";
 import { useDispatch } from "react-redux";
-import { addToCart, addToFavorite } from "@/store/nextSlice";
+import { addToCart } from "@/store/nextSlice";
 import Link from "next/link";
 
 const Products = ({ productData }: any) => {
@@ -199,7 +199,7 @@ const Products = ({ productData }: any) => {
                 >
                   <HiShoppingCart />
                 </span>
-                <span
+                {/* <span
                   onClick={() =>
                     dispatch(
                       addToFavorite({
@@ -219,7 +219,7 @@ const Products = ({ productData }: any) => {
                   className="w-full h-full border-b-[1px] border-b-gray-400 flex items-center justify-center text-xl bg-transparent hover:bg-amazon_yellow cursor-pointer duration-300"
                 >
                   <FaHeart />
-                </span>
+                </span> */}
               </div>
               {isNew && (
                 <p className="absolute top-0 right-0 text-amazon_blue font-medium text-xs tracking-wide animate-bounce">
