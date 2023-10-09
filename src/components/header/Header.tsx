@@ -10,6 +10,7 @@ import { StateProps } from "../../../type";
 import { useSession, signIn, signOut } from "next-auth/react"
 import { useEffect, useState } from "react";
 import { addUser } from "@/store/nextSlice";
+import SearchProducts from "../SearchProducts";
 const Header = () => {
   const { data: session} = useSession()
   const {productData,favoriteData,userInfo}=useSelector((state:StateProps)=>state.next);
