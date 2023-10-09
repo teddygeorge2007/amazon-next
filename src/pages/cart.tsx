@@ -5,7 +5,7 @@ import CartProduct from "@/components/CartProduct";
 import Link from "next/link";
 import Cartpayment from "@/components/Cartpayment";
 
-const cart = () => {
+const Cart = () => {
   const { productData } = useSelector((state: StateProps) => state.next);
 
   return (
@@ -47,4 +47,4 @@ const cart = () => {
   );
 };
 
-export default cart;
+export default Cart;
